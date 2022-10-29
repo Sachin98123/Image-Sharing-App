@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1008199751311",
+    "project_id": "instaclosachin",
+    "storage_bucket": "instaclosachin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008199751311:android:8d81730f9fbccf86f8c2fa",
+        "android_client_info": {
+          "package_name": "com.example.insta_closachin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008199751311-p0v3anki0bq1uq2uckhleq33u9b5lhb1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRVOLTvOayx-0CpGnyH2rFsDR9frkppUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008199751311-p0v3anki0bq1uq2uckhleq33u9b5lhb1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
