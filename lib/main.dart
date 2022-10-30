@@ -16,10 +16,16 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-
-    
     return MaterialApp(
-      darkTheme: ThemeData.dark(),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        primarySwatch: Colors.blueGrey,
+        indicatorColor: Colors.blueGrey,
+      ),
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        primarySwatch: Colors.blue,
+      ),
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
       home: const HomePage(),
@@ -32,6 +38,10 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Hello world"),
+      ),
+    );
   }
 }

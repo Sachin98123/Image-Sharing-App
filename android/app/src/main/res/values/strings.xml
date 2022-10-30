@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+    <string name="facebook_app_id">1828497577521831</string>
+    <string name="fb_login_protocol_scheme">fb1828497577521831</string>
+    <string name="facebook_client_token">d5cedd60c6e091ceb0c9eaae7d252082</string>
+    <string name="app_name">insta Closachin</string>
+
+</resources>
+
+
