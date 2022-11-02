@@ -7,6 +7,7 @@ import 'package:insta_closachin/state/auth/model/auth_result.dart';
 import '../../post/typedef/user_id.dart';
 
 class Authenticator {
+  const Authenticator();
   UserId? get userId => FirebaseAuth.instance.currentUser?.uid;
   bool get isAlreadyLoggedIn => userId != null;
   String get displayName =>
