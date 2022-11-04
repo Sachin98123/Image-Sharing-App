@@ -5,6 +5,8 @@ import 'package:insta_closachin/firebase_options.dart';
 import 'package:insta_closachin/state/auth/providers/auth_state_provider.dart';
 import 'package:insta_closachin/state/auth/providers/is_logged_in_provider.dart';
 import 'package:insta_closachin/state/providers/is_loading_provider.dart';
+import 'package:insta_closachin/views/components/animations/data_not_found_animation_view.dart';
+import 'package:insta_closachin/views/components/animations/error_animation_view.dart';
 import 'package:insta_closachin/views/components/loading/loading_screen.dart';
 import 'package:insta_closachin/views/login/Login_view.dart';
 
@@ -53,7 +55,7 @@ class MyApp extends StatelessWidget {
           if (isLoggedIn) {
             return const MainView();
           } else {
-            return const LoginView();
+            return const MainView();
           }
         },
       ),
@@ -72,12 +74,13 @@ class MainView extends StatelessWidget {
           title: const Text("Hello world"),
         ),
         body: Consumer(builder: (context, ref, child) {
-          return TextButton(
-            onPressed: () {
-              ref.read(authStateProvider.notifier).logOut();
-            },
-            child: const Text('Log Out'),
-          );
+          return const ErrorContentAnimationView();
+          //  TextButton(
+          //   onPressed: () {
+          //     ref.read(authStateProvider.notifier).logOut();
+          //   },
+          //   child: const Text('Log Out'),
+          // );
         }));
   }
 }
