@@ -4,7 +4,7 @@ import 'package:insta_closachin/state/auth/model/auth_result.dart';
 import 'package:insta_closachin/state/auth/model/auth_state.dart';
 import 'package:insta_closachin/state/user_info/models/backend/user_info_storage.dart';
 
-import '../../post/typedef/user_id.dart';
+import '../../posts/typedef/user_id.dart';
 
 class AuthStateNotifier extends StateNotifier<AuthState> {
   final _authenticator = const Authenticator();

@@ -4,7 +4,7 @@ import 'package:insta_closachin/state/constants/firebase_collection_name.dart';
 import 'package:insta_closachin/state/constants/firebase_field_names.dart';
 import 'package:insta_closachin/state/user_info/models/user_info_payload.dart';
 
-import '../../../post/typedef/user_id.dart';
+import '../../../posts/typedef/user_id.dart';
 
 @immutable
 class UserInfoStorage {

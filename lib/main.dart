@@ -2,13 +2,11 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:insta_closachin/firebase_options.dart';
-import 'package:insta_closachin/state/auth/providers/auth_state_provider.dart';
 import 'package:insta_closachin/state/auth/providers/is_logged_in_provider.dart';
 import 'package:insta_closachin/state/providers/is_loading_provider.dart';
-import 'package:insta_closachin/views/components/animations/data_not_found_animation_view.dart';
-import 'package:insta_closachin/views/components/animations/error_animation_view.dart';
 import 'package:insta_closachin/views/components/loading/loading_screen.dart';
 import 'package:insta_closachin/views/login/Login_view.dart';
+import 'package:insta_closachin/views/main/main_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -55,7 +53,7 @@ class MyApp extends StatelessWidget {
           if (isLoggedIn) {
             return const MainView();
           } else {
-            return const MainView();
+            return const LoginView();
           }
         },
       ),
@@ -63,27 +61,28 @@ class MyApp extends StatelessWidget {
   }
 }
 
-//When you are logged in
-class MainView extends StatelessWidget {
-  const MainView({super.key});
+// //When you are logged in
+// class MainView extends StatelessWidget {
+//   const MainView({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: const Text("Hello world"),
-        ),
-        body: Consumer(builder: (context, ref, child) {
-          return const ErrorContentAnimationView();
-          //  TextButton(
-          //   onPressed: () {
-          //     ref.read(authStateProvider.notifier).logOut();
-          //   },
-          //   child: const Text('Log Out'),
-          // );
-        }));
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//         appBar: AppBar(
+//           title: const Text("Hello world"),
+//         ),
+//         body: Consumer(builder: (context, ref, child) {
+//           return
+//               //  const ErrorContentAnimationView();
+//               TextButton(
+//             onPressed: () {
+//               ref.read(authStateProvider.notifier).logOut();
+//             },
+//             child: const Text('Log Out'),
+//           );
+//         }));
+//   }
+// }
 
 // When you are not logged in
 // class LoginView extends ConsumerWidget {

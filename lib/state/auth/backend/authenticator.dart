@@ -4,7 +4,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:insta_closachin/state/auth/constants/constants.dart';
 import 'package:insta_closachin/state/auth/model/auth_result.dart';
 
-import '../../post/typedef/user_id.dart';
+import '../../posts/typedef/user_id.dart';
 
 class Authenticator {
   const Authenticator();
