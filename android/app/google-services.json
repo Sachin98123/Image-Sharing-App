@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1008199751311-k114v98q1nje3nlprp9bpecfllih7565.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.insta_closachin",
+            "certificate_hash": "2d06da40dd7cebdee24d41e7955b1d55b4a9563c"
+          }
+        },
+        {
           "client_id": "1008199751311-p0v3anki0bq1uq2uckhleq33u9b5lhb1.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,6 +37,13 @@
             {
               "client_id": "1008199751311-p0v3anki0bq1uq2uckhleq33u9b5lhb1.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "1008199751311-0jgo70qcmii0v591o595k9b37d4fhfl0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.instaClosachin"
+              }
             }
           ]
         }
