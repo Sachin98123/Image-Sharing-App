@@ -5,6 +5,7 @@ import 'package:insta_closachin/views/components/animations/empty_content_with_a
 import 'package:insta_closachin/views/components/animations/error_animation_view.dart';
 import 'package:insta_closachin/views/components/animations/loading_animation_view.dart';
 import 'package:insta_closachin/views/components/post/post_grid_view.dart';
+import 'package:insta_closachin/views/components/post/refactored_post_grid_view.dart';
 import 'package:insta_closachin/views/constants/strings.dart';
 
 class HomeView extends ConsumerWidget {
@@ -28,7 +29,8 @@ class HomeView extends ConsumerWidget {
             text: Strings.noPostsAvailable,
           );
         } else {
-          return PostGridView(
+          //TODO : i have used Refactored post grid view here so reverse if it dont work out
+          return RefactoredPostGridView(
             posts: posts,
           );
         }

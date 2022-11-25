@@ -10,6 +10,7 @@ import 'package:insta_closachin/views/components/animations/small_error_animatio
 
 class LikeButton extends ConsumerWidget {
   final PostId postId;
+
   const LikeButton({
     Key? key,
     required this.postId,
@@ -18,11 +19,17 @@ class LikeButton extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final hasLiked = ref.watch(hasLikedPostProvider(postId));
+
     return hasLiked.when(data: (hasLiked) {
       return IconButton(
-        icon: FaIcon(
-          hasLiked ? FontAwesomeIcons.solidHeart : FontAwesomeIcons.heart,
-        ),
+        icon: hasLiked
+            ? const FaIcon(
+                FontAwesomeIcons.solidHeart,
+                color: Colors.red,
+              )
+            : const FaIcon(
+                FontAwesomeIcons.heart,
+              ),
         onPressed: () {
           final userId = ref.read(userIdProvider);
           if (userId == null) {

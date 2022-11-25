@@ -8,6 +8,8 @@ import 'package:insta_closachin/state/post_settings/providers/post_setting_provi
 import 'package:insta_closachin/views/components/dialogs/alert_dialog_model.dart';
 import 'package:insta_closachin/views/components/dialogs/logout_dialog.dart';
 import 'package:insta_closachin/views/constants/strings.dart';
+import 'package:insta_closachin/views/tabs/home/home_view.dart';
+import 'package:insta_closachin/views/tabs/search/search_view.dart';
 import 'package:insta_closachin/views/tabs/user_posts/user_post_view.dart';
 
 import '../create_new_post/create_new_post_view.dart';
@@ -99,8 +101,8 @@ class _MainViewState extends ConsumerState<MainView> {
         ),
         body: const TabBarView(children: [
           UserPostView(),
-          UserPostView(),
-          UserPostView(),
+          SearchView(),
+          HomeView(),
         ]),
       ),
     );

@@ -9,7 +9,10 @@ import 'package:insta_closachin/views/constants/strings.dart';
 
 class SearchGridView extends ConsumerWidget {
   final String searchTerm;
-  const SearchGridView({required this.searchTerm, super.key});
+  const SearchGridView({
+    required this.searchTerm,
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -36,11 +39,13 @@ class SearchGridView extends ConsumerWidget {
         }
       },
       error: (error, stackTrace) {
-        return const ErrorContentAnimationView();
+        return const SliverToBoxAdapter(child: ErrorContentAnimationView());
       },
       loading: () {
-        return const Center(
-          child: CircularProgressIndicator(),
+        return const SliverToBoxAdapter(
+          child: Center(
+            child: CircularProgressIndicator(),
+          ),
         );
       },
     );

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:insta_closachin/views/components/post/post_thumbnail_view.dart';
-import 'package:insta_closachin/views/post_comments/post_comments_view.dart';
+import 'package:insta_closachin/views/post_detail/post_detail_view.dart';
 
 import '../../../state/posts/models/post.dart';
 
@@ -16,7 +16,7 @@ class PostGridView extends StatelessWidget {
     return GridView.builder(
       padding: const EdgeInsets.all(8.0),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 3,
+        crossAxisCount: 2,
         mainAxisSpacing: 8.0,
         crossAxisSpacing: 8.0,
       ),
@@ -29,8 +29,8 @@ class PostGridView extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (_) => PostCommentsView(
-                  postId: post.postId,
+                builder: (_) => PostDetailView(
+                  post: post,
                 ),
               ),
             );

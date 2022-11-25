@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:image/image.dart';
 
 class RichTwoPartsText extends StatelessWidget {
   final String leftPart;
@@ -21,11 +22,20 @@ class RichTwoPartsText extends StatelessWidget {
           TextSpan(
             text: leftPart,
             style: const TextStyle(
+              color: Colors.yellowAccent,
               fontWeight: FontWeight.bold,
+              fontSize: 20,
             ),
           ),
+          const TextSpan(
+            text: " 🌞",
+          ),
           TextSpan(
-            text: "☑️ $rightPart",
+            text: "\n $rightPart",
+            style: const TextStyle(
+              color: Colors.green,
+              fontSize: 18,
+            ),
           ),
         ],
       ),

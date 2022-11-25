@@ -14,9 +14,13 @@ class PostThumbnailView extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
         onTap: onTapped,
-        child: Image.network(
-          post.thumbnailUrl,
-          fit: BoxFit.cover,
+        child: SizedBox(
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height * 0.45,
+          child: Image.network(
+            post.thumbnailUrl,
+            fit: BoxFit.cover,
+          ),
         ));
   }
 }
