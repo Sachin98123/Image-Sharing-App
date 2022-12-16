@@ -4,7 +4,6 @@ import 'package:insta_closachin/state/posts/providers/all_post_provider.dart';
 import 'package:insta_closachin/views/components/animations/empty_content_with_animation_view.dart';
 import 'package:insta_closachin/views/components/animations/error_animation_view.dart';
 import 'package:insta_closachin/views/components/animations/loading_animation_view.dart';
-import 'package:insta_closachin/views/components/post/post_grid_view.dart';
 import 'package:insta_closachin/views/components/post/refactored_post_grid_view.dart';
 import 'package:insta_closachin/views/constants/strings.dart';
 
