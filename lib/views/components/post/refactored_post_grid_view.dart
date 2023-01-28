@@ -25,8 +25,18 @@ class RefactoredPostGridView extends StatelessWidget {
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              PostDisplayNameAndMessageView(
-                post: post,
+              //added row and share button to the right.
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  PostDisplayNameAndMessageView(
+                    post: post,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.share_outlined),
+                  ),
+                ],
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 30),
